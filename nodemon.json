@@ -1,0 +1,17 @@
+{
+  "delay": 500,
+  "verbose": true,
+  "ext": "ts",
+  "exec": "ts-node --transpile-only ./src/web.ts",
+  "watch": ["./src/**/*"],
+  "ignore": [
+    "./src/migrations/",
+    "./src/seeders/",
+    "./src/commands/",
+    "./src/tests/",
+    "./src/console.ts"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
