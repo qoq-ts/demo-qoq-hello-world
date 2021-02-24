@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "qoq": "^0.0.19",
+    "qoq": "^0.0.20",
     "qoq-etag": "^0.0.1",
     "qoq-morgan": "^0.0.2"
   },
