@@ -8,7 +8,8 @@ const developmentConfig: Config = {
   }),
   db: createConfig<SequelizeOptions>({
     dialect: 'sqlite',
-    logging: false,
+    logging: console.log,
+    storage: './sqlite.db'
   }),
 };
 

@@ -1,4 +1,4 @@
-import { column, migration } from 'qoq-sequelize';
+import { column, literal, migration } from 'qoq-sequelize';
 
 export default migration({
   async up(queryInterface) {
@@ -7,6 +7,9 @@ export default migration({
       user_id: column.int.notNull(),
       title: column.varChar.notNull(),
       description: column.text.comment('Not Important'),
+      created_at: column.dateTime.default(literal('CURRENT_TIMESTAMP')),
+      updated_at: column.dateTime.default(literal('CURRENT_TIMESTAMP')),
+      deleted_at: column.dateTime,
     });
 
     await queryInterface.addIndex('project', ['user_id'], {

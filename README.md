@@ -1,4 +1,10 @@
-# Run Server
+# Initialization
+```bash
+yarn install
+npx qoq db:migrate
+```
+
+# Run server
 ```bash
 yarn start
 ```

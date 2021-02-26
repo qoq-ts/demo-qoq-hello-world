@@ -3,13 +3,13 @@ import { Project } from './Project';
 
 export const User = defineModel({
   attributes: {
-    id: column.int.primaryKey(),
+    id: column.int.primaryKey().autoIncrement(),
     name: column.varChar.notNull(),
     age: column.int.notNull(),
   },
   associations: {
     projects: () => User.hasMany(Project, {
-      foreignKey: 'user_id',
+      foreignKey: 'userId',
     }),
   },
   scopes: {
@@ -19,5 +19,10 @@ export const User = defineModel({
         id: { [Op.lt]: 18 }
       },
     }),
+  },
+  options: {
+    underscored: true,
+    timestamps: true,
+    paranoid: true,
   },
 });

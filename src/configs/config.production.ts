@@ -7,7 +7,7 @@ const productionConfig = {
     cacheDir: './caches',
   }),
   db: createConfig<SequelizeOptions>({
-    dialect: 'sqlite',
+    dialect: 'mysql',
     logging: false,
   }),
 };
