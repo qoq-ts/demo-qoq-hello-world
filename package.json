@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "qoq": "^0.0.20",
+    "qoq": "^0.0.21",
     "qoq-etag": "^0.0.1",
-    "qoq-morgan": "^0.0.2"
+    "qoq-morgan": "^0.0.2",
+    "qoq-sequelize": "^0.0.4",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "^14.14.30",

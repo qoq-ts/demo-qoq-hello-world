@@ -1,5 +1,6 @@
 import { validator, WebRouter } from 'qoq';
 import { advancedSlots } from '../bootstrap/webSlot';
+import { User } from '../models/User';
 
 export const router = new WebRouter({
   prefix: '/users',
@@ -14,12 +15,20 @@ router
   })
   .action(async (ctx) => {
     const { page, size } = ctx.query;
-    const users = await ctx.cache.get<object[]>('users', []);
+
+    const users = await User.findAll({
+      attributes: ['id', 'name'],
+      offset: (page - 1) * size,
+      limit: size,
+    });
+
+    users[0]?.get({ plain: true }).age; // number
+    users[0]?.age; // number
 
     ctx.send({
       page,
       size,
-      result: users.slice((page - 1) * size, size),
+      result: users,
       total: users.length,
     });
   });
@@ -31,14 +40,9 @@ router
     age: validator.number.optional(),
   })
   .action(async (ctx) => {
-    const users = await ctx.cache.get<object[]>('users', []);
-    users.push(ctx.payload);
-    await ctx.cache.set('users', users);
+    const result = await User.create(ctx.payload);
 
-    ctx.send({
-      id: users.length,
-      ...ctx.payload,
-    }, 201);
+    ctx.send(result, 201);
   });
 
 router
@@ -47,14 +51,11 @@ router
     id: validator.number,
   })
   .action(async (ctx) => {
-    const users = await ctx.cache.get<object[]>('users', []);
-
-    if (users.length < ctx.params.id) {
-      ctx.throw(404, 'User not exists');
-    }
-
-    users.splice(ctx.params.id - 1, 1);
-    await ctx.cache.set('users', users);
+    await User.destroy({
+      where: {
+        id: ctx.params.id,
+      }
+    });
 
     ctx.send(null, 204);
   });
