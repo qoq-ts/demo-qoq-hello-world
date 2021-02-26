@@ -13,7 +13,7 @@
     "qoq": "^0.0.21",
     "qoq-etag": "^0.0.1",
     "qoq-morgan": "^0.0.2",
-    "qoq-sequelize": "^0.0.4",
+    "qoq-sequelize": "^0.0.5",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {

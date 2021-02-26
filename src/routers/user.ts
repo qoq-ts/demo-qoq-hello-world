@@ -12,18 +12,23 @@ router
   .query({
     page: validator.number,
     size: validator.number.default(10),
+    boy: validator.boolean.default(false),
   })
   .action(async (ctx) => {
-    const { page, size } = ctx.query;
+    const { page, size, boy } = ctx.query;
+    const Scoped = boy ? User.scope('boy') : User;
 
-    const users = await User.findAll({
+    const users = await Scoped.findAll({
       attributes: ['id', 'name'],
       offset: (page - 1) * size,
       limit: size,
     });
 
-    users[0]?.get({ plain: true }).age; // number
-    users[0]?.age; // number
+    {
+      users[0]?.get({ plain: true }).age; // number
+      users[0]?.age; // number
+      users[0]?.getProjects();
+    }
 
     ctx.send({
       page,

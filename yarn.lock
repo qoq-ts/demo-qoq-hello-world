@@ -1592,10 +1592,10 @@ qoq-morgan@^0.0.2:
     morgan "1.10.0"
     tslib "2.1.0"
 
-qoq-sequelize@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/qoq-sequelize/-/qoq-sequelize-0.0.4.tgz#7b04fcc2c32a83ea9a7a10fe6337edc812e2a4e6"
-  integrity sha512-J/myFcf2WRA6hKdYVUeFxKE4SfQyU6DI/MHsRBN1eK2cDKDUCf6FZHfeWlc6iX/1I7t/nKlr5L1Qgb5f/nQJ5A==
+qoq-sequelize@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/qoq-sequelize/-/qoq-sequelize-0.0.5.tgz#cf6e08848d46d04f81fd8690f32919b3ac0e8003"
+  integrity sha512-Hc4m02GTeFFCzsm+zFFbyGjvxboNDsRk/gZ5Nehd7EM8g8OnFIDyudQWQ6p+nnY78BDnwLj8owKEDF5QEt2APQ==
   dependencies:
     "@types/validator" "13.1.3"
     chalk "4.1.0"

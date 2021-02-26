@@ -1,4 +1,5 @@
 import { column, defineModel } from 'qoq-sequelize';
+import { User } from './User';
 
 export const Project = defineModel({
   attributes: {
@@ -6,5 +7,10 @@ export const Project = defineModel({
     user_id: column.int.notNull(),
     title: column.varChar.notNull(),
     description: column.text,
+  },
+  associations: {
+    user: () => Project.belongsTo(User, {
+      foreignKey: 'user_id',
+    }),
   },
 });
