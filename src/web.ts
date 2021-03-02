@@ -1,7 +1,7 @@
 import { WebApplication } from "qoq";
 
 const app = new WebApplication({
-  routerDir: __dirname + '/routers',
+  routersDir: __dirname + '/routers',
 });
 
 app.listen(3000, () => {

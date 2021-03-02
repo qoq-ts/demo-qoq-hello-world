@@ -114,10 +114,15 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^14.14.30":
+"@types/node@*":
   version "14.14.30"
   resolved "https://registry.npmjs.org/@types/node/-/node-14.14.30.tgz#7d5162eec085ba34f8cb9011e9ba12119f76f961"
   integrity sha512-gUWhy8s45fQp4PqqKecsnOkdW0kt1IaKjgOIR3HPokkzTmQj9ji2wWFID5THu1MKrtO+d4s2lVrlEhXUsPXSvg==
+
+"@types/node@^14.14.31":
+  version "14.14.31"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
+  integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
 
 "@types/qs@*":
   version "6.9.5"
@@ -1606,10 +1611,10 @@ qoq-morgan@^0.0.2:
     morgan "1.10.0"
     tslib "2.1.0"
 
-qoq-sequelize@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/qoq-sequelize/-/qoq-sequelize-0.0.5.tgz#cf6e08848d46d04f81fd8690f32919b3ac0e8003"
-  integrity sha512-Hc4m02GTeFFCzsm+zFFbyGjvxboNDsRk/gZ5Nehd7EM8g8OnFIDyudQWQ6p+nnY78BDnwLj8owKEDF5QEt2APQ==
+qoq-sequelize@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.npmjs.org/qoq-sequelize/-/qoq-sequelize-0.0.6.tgz#a458aa1667685c42a9f05c4172f26b4a899818b4"
+  integrity sha512-vcPnA8pZ/a+NFe8npo6HcI/o2fUnyFP8wC8zKDUp8ZHcZgP+mfgmhBIt5wAoYmL4Ku74d6YlCr6NELnA4kXy/w==
   dependencies:
     "@types/validator" "13.1.3"
     chalk "4.1.0"
@@ -1622,10 +1627,10 @@ qoq-sequelize@^0.0.5:
     tslib "2.1.0"
     umzug "3.0.0-beta.15"
 
-qoq@^0.0.21:
-  version "0.0.21"
-  resolved "https://registry.npmjs.org/qoq/-/qoq-0.0.21.tgz#d406d0d69f0f9b3fed414c93d1a53ede6d75672c"
-  integrity sha512-fpczx0md9+I1UPCFnBKQKK9a+i+KRrN1COrlHDsP/8f+EsYdqKVoluD2SQh/RBW59xD4Ufh49D1epc4uUPhe1Q==
+qoq@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.npmjs.org/qoq/-/qoq-0.0.22.tgz#fda696f18907349259f3f24ea8b9b9f9b6a046c3"
+  integrity sha512-fF/bxNZPY+DYuAkAxdRGaGslRjNv9o0FaQkZRStiR12l65Wan4la2ygCGO/wDJ5ksdGKoBX8fsMgox+AjUAmMg==
   dependencies:
     "@types/accepts" "1.3.5"
     "@types/content-disposition" "0.5.3"

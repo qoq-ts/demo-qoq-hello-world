@@ -2,9 +2,9 @@ import { Sequelize, SequelizeSlot } from 'qoq-sequelize';
 import { config } from '../configs';
 
 export const db = new Sequelize({
-  migrationsPath: './src/migrations',
-  modelsPath: './src/models',
-  seedersPath: './src/seeders',
+  migrationsDir: './src/migrations',
+  modelsDir: './src/models',
+  seedersDir: './src/seeders',
   ...config.db,
 });
 
