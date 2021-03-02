@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@koa/cors@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/@koa/cors/-/cors-3.1.0.tgz#618bb073438cfdbd3ebd0e648a76e33b84f3a3b2"
+  integrity sha512-7ulRC1da/rBa6kj6P4g2aJfnET3z8Uf3SWu60cjbtxTA5g8lxRdX/Bd2P92EagGwwAhANeNw8T8if99rJliR6Q==
+  dependencies:
+    vary "^1.1.2"
+
 "@rushstack/ts-command-line@^4.7.7":
   version "4.7.8"
   resolved "https://registry.npmjs.org/@rushstack/ts-command-line/-/ts-command-line-4.7.8.tgz#3aa77cf544c571be3206fc2bcba20c7a096ed254"
@@ -1574,6 +1581,13 @@ pupa@^2.0.1:
   dependencies:
     escape-goat "^2.0.0"
 
+qoq-cors@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/qoq-cors/-/qoq-cors-0.0.2.tgz#2035520a22de85eba90b560365fb1f33254eb960"
+  integrity sha512-AyD0uR/7f+gJLyabpCRN2AzNiBISbBSek3rQdeIT6v/GUM5TomlYURO3FHm8UcTIx96ZSz3TvptRY4SR9l+hDQ==
+  dependencies:
+    "@koa/cors" "^3.1.0"
+
 qoq-etag@^0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/qoq-etag/-/qoq-etag-0.0.1.tgz#657d2c6b659cc4a1735f241fa4eb69710d59e8f5"
@@ -2245,7 +2259,7 @@ validator@^10.11.0:
   resolved "https://registry.npmjs.org/validator/-/validator-10.11.0.tgz#003108ea6e9a9874d31ccc9e5006856ccd76b228"
   integrity sha512-X/p3UZerAIsbBfN/IwahhYaBbY68EN/UQBWHtsbXGT5bfrH/p4NQzUCG1kF/rtKaNpnJ7jAu6NGTdSNtyNIXMw==
 
-vary@1.1.2:
+vary@1.1.2, vary@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
