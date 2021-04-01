@@ -3,6 +3,7 @@ import { webSlots } from '../bootstrap/webSlot';
 
 export const router = new WebRouter({
   slots: webSlots,
+  // slots: advancedSlots,
 });
 
 router
@@ -11,14 +12,17 @@ router
     name: validator.string.default('World'),
   })
   .action(async (ctx) => {
-    ctx.send('Hello ' + ctx.query.name, 200);
+    ctx.body = 'Hello ' + ctx.query.name;
   });
 
 router
   .get('/health')
   .action(async (ctx) => {
-    ctx.send({ status: 'ok' });
+    ctx.body = { status: 'ok' };
 
-    // @ts-expect-error cache doesn't slot to here, try to replace webSlots to advancedSlots.
+    /**
+     * cache doesn't slot to here, try to replace webSlots to advancedSlots.
+     *
+     * @ts-expect-error */
     ctx.cache;
   });

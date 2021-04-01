@@ -7,4 +7,4 @@ const app = new ConsoleApplication({
 
 db.mountCommands(app);
 
-app.run();
+app.execute();

@@ -8,19 +8,23 @@
     "start": "nodemon",
     "h": "qoq -h"
   },
+  "engines": {
+    "node": ">=10.17.0"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
-    "qoq": "^0.0.22",
-    "qoq-cors": "^0.0.2",
-    "qoq-etag": "^0.0.1",
-    "qoq-morgan": "^0.0.2",
-    "qoq-sequelize": "^0.0.6",
-    "sqlite3": "^5.0.2"
+    "qoq": "^0.0.25",
+    "qoq-cors": "^0.0.3",
+    "qoq-etag": "^0.0.2",
+    "qoq-morgan": "^0.0.3",
+    "qoq-sequelize": "^0.0.7",
+    "sqlite3": "^5.0.2",
+    "tslib": "^2.1.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.31",
+    "@types/node": "^14.14.37",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   }
 }

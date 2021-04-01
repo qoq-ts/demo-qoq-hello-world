@@ -14,8 +14,8 @@ router
     size: validator.number.default(10),
     boy: validator.boolean.default(false),
   })
-  .action(async (ctx) => {
-    const { page, size, boy } = ctx.query;
+  .action(async (ctx, payload) => {
+    const { page, size, boy } = payload.query;
     const Scoped = boy ? User.scope('boy') : User;
 
     const users = await Scoped.findAll({
@@ -30,24 +30,25 @@ router
       users[0]?.getProjects();
     }
 
-    ctx.send({
+    ctx.body = {
       page,
       size,
       result: users,
       total: users.length,
-    });
+    };
   });
 
 router
   .post('/')
-  .payload({
+  .body({
     name: validator.string,
     age: validator.number.optional(),
   })
-  .action(async (ctx) => {
-    const result = await User.create(ctx.payload);
+  .action(async (ctx, payload) => {
+    const result = await User.create(payload.body);
 
-    ctx.send(result, 201);
+    ctx.body = result;
+    ctx.status = 201;
   });
 
 router
@@ -62,5 +63,5 @@ router
       }
     });
 
-    ctx.send(null, 204);
+    ctx.status = 204;
   });

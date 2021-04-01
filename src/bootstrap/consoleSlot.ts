@@ -3,4 +3,4 @@ import { dbSlot } from './sequelize';
 
 export const consoleSlots = ConsoleSlotManager.use(dbSlot);
 
-Tree.setConsoleTrunk(consoleSlots);
+Tree.trunk(consoleSlots);

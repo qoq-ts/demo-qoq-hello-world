@@ -1,12 +1,12 @@
-import { createConfig, FileCacheOptions } from 'qoq';
+import { defineConfig, FileCacheOptions } from 'qoq';
 import { SequelizeOptions } from 'qoq-sequelize';
 
 const productionConfig = {
-  cache: createConfig<FileCacheOptions>({
-    slot: 'FileCache',
+  cache: defineConfig<FileCacheOptions>({
+    engine: 'FileCache',
     cacheDir: './caches',
   }),
-  db: createConfig<SequelizeOptions>({
+  db: defineConfig<SequelizeOptions>({
     dialect: 'mysql',
     logging: false,
   }),
