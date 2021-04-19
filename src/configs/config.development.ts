@@ -1,10 +1,10 @@
-import { defineConfig, MemoryCacheOptions } from 'qoq';
+import { defineConfig, MemoryCache, MemoryCacheOptions } from 'qoq';
 import { SequelizeOptions } from 'qoq-sequelize';
 import { Config } from '.';
 
 const developmentConfig: Config = {
   cache: defineConfig<MemoryCacheOptions>({
-    engine: 'MemoryCache',
+    engine: MemoryCache,
   }),
   db: defineConfig<SequelizeOptions>({
     dialect: 'sqlite',

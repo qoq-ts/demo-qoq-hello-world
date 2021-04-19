@@ -17,12 +17,12 @@ router
     more: validator.boolean.optional(),
   })
   .alias({
-    name: ['n'],
+    n: 'name',
   })
   .action(async (ctx) => {
     console.log(chalk.green('\n[log] Hello ' + ctx.options.name + '\n'));
 
     if (ctx.options.more) {
-      ctx.run('-h');
+      ctx.execute('-h');
     }
   });
