@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
-    "target": "ES2018",
+    "target": "ES2020",
     "module": "CommonJS",
     "allowJs": false,
     "declaration": true,
-    "declarationDir": "./build/types",
     "outDir": "./build",
     "rootDir": ".",
     "importHelpers": true,
@@ -26,7 +25,6 @@
     "noUncheckedIndexedAccess": true,
 
     "moduleResolution": "node",
-    "typeRoots": ["./node_modules/@types/", "./typing/"],
     "esModuleInterop": true,
     "resolveJsonModule": true,
 

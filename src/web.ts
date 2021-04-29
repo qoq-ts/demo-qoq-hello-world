@@ -1,6 +1,7 @@
 import { WebApplication } from "qoq";
 
 const app = new WebApplication({
+  // Optional
   routersDir: __dirname + '/routers',
 });
 

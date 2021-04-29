@@ -22,6 +22,9 @@ router
       attributes: ['id', 'name'],
       offset: (page - 1) * size,
       limit: size,
+      order: [
+        Scoped.order.asc('id'),
+      ]
     });
 
     {

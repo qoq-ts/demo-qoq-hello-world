@@ -99,6 +99,13 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/formidable@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@types/formidable/-/formidable-1.2.1.tgz#d17006b48acd314df9bcfa04236b3e32de0cc817"
+  integrity sha512-4sVIjd51AADf4YnpsdqNQh7n3ZRLo16w+w6F7zzKjK6dBsQc9Vrq8GQLpHOOWq0V8Fe2bbp2EpihHx57iVgm5Q==
+  dependencies:
+    "@types/node" "*"
+
 "@types/http-assert@*":
   version "1.5.1"
   resolved "https://registry.npmjs.org/@types/http-assert/-/http-assert-1.5.1.tgz#d775e93630c2469c2f980fc27e3143240335db3b"
@@ -162,10 +169,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^14.14.41":
-  version "14.14.41"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.41.tgz#d0b939d94c1d7bd53d04824af45f1139b8c45615"
-  integrity sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g==
+"@types/node@*", "@types/node@^15.0.1":
+  version "15.0.1"
+  resolved "https://registry.npmjs.org/@types/node/-/node-15.0.1.tgz#ef34dea0881028d11398be5bf4e856743e3dc35a"
+  integrity sha512-TMkXt0Ck1y0KKsGr9gJtWGjttxlZnnvDtphxUOSd0bfaR6Q1jle+sPvrzNR1urqYTWMinoKvjKfXUGsumaO1PA==
 
 "@types/qs@*":
   version "6.9.6"
@@ -289,11 +296,6 @@ argparse@~1.0.9:
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
-
-asap@^2.0.0:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
-  integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
 
 asn1@~0.2.3:
   version "0.2.4"
@@ -439,10 +441,10 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
-  integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
+chalk@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
+  integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -681,14 +683,6 @@ detect-libc@^1.0.2:
   resolved "https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
 
-dezalgo@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/dezalgo/-/dezalgo-1.0.3.tgz#7f742de066fc748bc8db820569dddce49bf0d456"
-  integrity sha1-f3Qt4Gb8dIvI24IFad3c5Jvw1FY=
-  dependencies:
-    asap "^2.0.0"
-    wrappy "1"
-
 diff@^4.0.1:
   version "4.0.2"
   resolved "https://registry.npmjs.org/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
@@ -723,6 +717,11 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
+email-validator@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/email-validator/-/email-validator-2.0.4.tgz#b8dfaa5d0dae28f1b03c95881d904d4e40bfe7ed"
+  integrity sha512-gYCwo7kh5S3IDyZPLZf6hSS0MnZT8QmJFqYvbqlDZSbwdZlY6QZWxJ4i/6UhITOJ4XzyI647Bm2MXKCLqnJ4nQ==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -796,10 +795,10 @@ fast-json-stable-stringify@^2.0.0:
   resolved "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
   integrity sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
 
-filesize@^6.1.0:
-  version "6.2.5"
-  resolved "https://registry.npmjs.org/filesize/-/filesize-6.2.5.tgz#ee4de0e71ba03f1d6814a40085249343ccfc7ac3"
-  integrity sha512-JkM1y2+IpnEwp3pbXOUXR+9ytuZE07ZnWb/OR0H/WOSkjWASpmXgC0ZBIs4/SAYq9wHqExeQxcYNoJKf6s0RCg==
+filesize@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.npmjs.org/filesize/-/filesize-6.3.0.tgz#dff53cfb3f104c9e422f346d53be8dbcc971bf11"
+  integrity sha512-ytx0ruGpDHKWVoiui6+BY/QMNngtDQ/pJaFwfBpQif0J63+E8DLdFyqS3NkKQn7vIruUEpoGD9JUJSg7Kp+I0g==
 
 fill-range@^7.0.1:
   version "7.0.1"
@@ -822,13 +821,10 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-formidable@^2.0.0-canary.20200504.1:
-  version "2.0.0-dev.20200131.2"
-  resolved "https://registry.npmjs.org/formidable/-/formidable-2.0.0-dev.20200131.2.tgz#e36fa8bc527cf83a3f8bb042c61062513e7dee03"
-  integrity sha512-QqOPy9YPdGO0aL1iW2xNjABA+qRvb5H24iV6cFAwtJVfo8XsfJ7EcNocuxBI6oAt83fNCfBN6GbcqB5A5xvR1A==
-  dependencies:
-    dezalgo "^1.0.3"
-    once "^1.4.0"
+formidable@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/formidable/-/formidable-1.2.2.tgz#bf69aea2972982675f00865342b982986f6b8dd9"
+  integrity sha512-V8gLm+41I/8kguQ4/o1D3RIHRmhYFG4pnNyonvua+40rqcEmT4+V71yaZ3B457xbbgCsCfjSPi65u/W6vK1U5Q==
 
 fresh@~0.5.2:
   version "0.5.2"
@@ -1581,9 +1577,9 @@ normalize-url@^4.1.0:
   integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
 
 npm-bundled@^1.0.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/npm-bundled/-/npm-bundled-1.1.1.tgz#1edd570865a94cdb1bc8220775e29466c9fb234b"
-  integrity sha512-gqkfgGePhTpAEgUsGEgcq1rqPXA+tv/aVBlgEzfXwA1yiUJF7xtEt3CtVwOjNYQOVknDk0F20w58Fnm3EtG0fA==
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/npm-bundled/-/npm-bundled-1.1.2.tgz#944c78789bd739035b70baa2ca5cc32b8d860bc1"
+  integrity sha512-x5DHup0SuyQcmL3s7Rx/YQ8sbw/Hzg0rj48eN0dV7hf5cmQq5PXIeioroH3raV1QC1yh3uTYuMThvEQF3iKgGQ==
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
@@ -1780,13 +1776,13 @@ qoq-morgan@^0.0.3:
     morgan "^1.10.0"
     tslib "^2.1.0"
 
-qoq-sequelize@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.npmjs.org/qoq-sequelize/-/qoq-sequelize-0.0.12.tgz#3a634374e9fce0c9714d6af0cb34d6ad1204296e"
-  integrity sha512-kwvAPFW676n0TT+0UUqFJ5fJjx6oz8a2ak+M5pmew6zbJ2gYpU5XsA6M6/0naSa8ocDhVIxfbPQZNO+hhZv7kA==
+qoq-sequelize@^0.0.17:
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/qoq-sequelize/-/qoq-sequelize-0.0.17.tgz#863078c0c2724edc2d234bb324f050d2a4dc5ca6"
+  integrity sha512-jbrCTle5BKFrkN8g8YkzbqdNs65MS6ttphuy5RjJsyEwy86S/JQsGKdfv3J6cKEoodBCfzMbMw006j40xPnYEw==
   dependencies:
     "@types/validator" "^13.1.3"
-    chalk "^4.1.0"
+    chalk "^4.1.1"
     glob "^7.1.6"
     lodash.snakecase "^4.1.1"
     mkdirp "^1.0.4"
@@ -1796,16 +1792,18 @@ qoq-sequelize@^0.0.12:
     tslib "^2.2.0"
     umzug "3.0.0-beta.15"
 
-qoq@^0.0.31:
-  version "0.0.31"
-  resolved "https://registry.npmjs.org/qoq/-/qoq-0.0.31.tgz#bdcd7e7ac69d62afb21241d21384b1df034d21d2"
-  integrity sha512-BtnJxzgBEQp69WnJ72FJayRJ1iYE7OVXdAZLxUW4xg6dpbqe+QaJh2IaWZtgA5NBOVPGtOFxTARbPMVVqIShvA==
+qoq@^0.0.36:
+  version "0.0.36"
+  resolved "https://registry.npmjs.org/qoq/-/qoq-0.0.36.tgz#928ac131af8d33562d1b24a4a54ae66cb2cac01b"
+  integrity sha512-UOxh3JXj65ZSoUlMBTr+e7iIfwQfSTlkcahgEmwLmcOma468jHpx7WYdkw3kIKEkWgVU9YrRni9iBVopz/Ejig==
   dependencies:
+    "@types/formidable" "^1.2.1"
     "@types/koa" "2.13.1"
-    chalk "^4.1.0"
+    chalk "^4.1.1"
     co-body "^6.1.0"
-    filesize "^6.1.0"
-    formidable "^2.0.0-canary.20200504.1"
+    email-validator "^2.0.4"
+    filesize "^6.3.0"
+    formidable "^1.2.2"
     glob "^7.1.6"
     koa "2.13.1"
     lru-cache "^6.0.0"
